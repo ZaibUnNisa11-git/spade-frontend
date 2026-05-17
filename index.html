@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SPADE Landing Page</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
+
+        <div class="logo">
+        <img src="images/logo.png" alt="SPADE Logo" class="logo-img" loading="lazy"> SPADE
+        </div>
+
+<nav id="nav-menu">
+
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">What We Do</a>
+    <a href="#work">Work</a>
+    <a href="#blog">Blog</a>
+
+    <a href="#contact" class="btn-contact">
+        Contact
+    </a>
+
+</nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main class="hero" id="home">
+
+        <h1>
+
+            We Build Scalable
+            <span class="highlight-blue">Web & Mobile</span><br>
+
+            <span class="highlight-blue">Applications</span>
+            That Help Businesses<br>
+
+            <span class="highlight-cyan">* Grow</span>
+            Not Just Look Good
+
+        </h1>
+
+        <p>
+            We are a leading web and mobile app development company delivering
+            innovative, user-friendly, and result-driven digital solutions.
+        </p>
+
+        <!-- BUTTONS -->
+
+        <div class="cta-group">
+
+            <a href="#" class="btn-primary">
+
+                Get Started
+
+                <div class="arrow-circle">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+            <a href="#" class="btn-secondary">
+                Our Work
+            </a>
+
+        </div>
+
+        <!-- TECH STACK -->
+
+        <div class="tech-stack">
+
+            <div class="tech-icon">
+                <i class="fa-brands fa-react"></i>
+            </div>
+
+            <div class="tech-icon">
+                <i class="fa-brands fa-node-js"></i>
+            </div>
+
+            <div class="tech-icon">
+                <span>JS</span>
+            </div>
+
+            <div class="tech-icon">
+                <i class="fa-brands fa-angular"></i>
+            </div>
+
+            <div class="tech-icon">
+                <i class="fa-brands fa-php"></i>
+            </div>
+
+            <div class="tech-icon">
+                <i class="fa-brands fa-laravel"></i>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- =========================
+         Cards SECTION
+    ========================== -->    
+
+<section class="content-cards-container" id="about">
+    
+    <div class="highlights-ribbon">
+        <div class="ribbon-item">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Top App Developers</span>
+        </div>
+        <div class="ribbon-item">
+            <i class="fa-solid fa-scissors"></i>
+            <span>Web, Mobile & Custom Software Experts</span>
+        </div>
+        <div class="ribbon-item">
+            <i class="fa-solid fa-cubes"></i>
+            <span>UI/UX</span>
+        </div>
+    </div>
+
+<div class="card card-who-we-are">
+
+    <!-- IMAGE SIDE -->
+
+    <div class="who-images">
+
+
+        <div class="big-image">
+            <img src="images/who1.jpg" alt="">
+        </div>
+        <div class="big-image">
+            <img src="images/who.jpg" alt="">
+        </div>
+
+    </div>
+
+    <!-- CONTENT SIDE -->
+
+    <div class="who-content">
+
+        <span class="sub-label">
+            WHO WE ARE
+        </span>
+
+        <h2>We Work With</h2>
+
+        <div class="work-item">
+
+            <div class="work-icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+
+            <div>
+                <h3>Startups</h3>
+                <p>Turning ideas into powerful digital products.</p>
+            </div>
+
+        </div>
+
+        <div class="work-item">
+
+            <div class="work-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div>
+                <h3>Entrepreneurs</h3>
+                <p>Building your vision with the right technology.</p>
+            </div>
+
+        </div>
+
+        <div class="work-item">
+
+            <div class="work-icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+
+            <div>
+                <h3>Business & SMEs</h3>
+                <p>Digital solutions that drive real growth.</p>
+            </div>
+
+        </div>
+
+        <div class="work-item">
+
+            <div class="work-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+
+            <div>
+                <h3>BRANDS/ENTERPRISES</h3>
+                <p>Scalable systems for complex business needs.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="services-grid-wrapper" id="services">
+
+    <!-- LEFT CARD -->
+
+    <div class="card card-services-nav">
+
+        <div class="accent-line"></div>
+
+        <h2>Our Services</h2>
+
+        <a href="#" class="btn-all-services">
+            VIEW ALL SERVICES
+        </a>
+
+        <ul class="services-nav-list">
+
+            <li class="active">
+                <a href="#">App Development</a>
+            </li>
+
+            <li>
+                <a href="#">Web Development</a>
+            </li>
+
+            <li>
+                <a href="#">UI/UX Design</a>
+            </li>
+
+            <li>
+                <a href="#">Digital Marketing</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MIDDLE IMAGE CARD -->
+
+    <div class="card middle-image-card">
+
+        <img src="images/m_card.jpg" alt="Workspace">
+
+    </div>
+
+    <!-- RIGHT CONTENT CARD -->
+
+    <div class="card services-content-card">
+
+        <div class="services-details-content">
+
+            <p class="description-text">
+                We design and develop powerful digital products that drive growth.
+            </p>
+
+            <ul class="checklist">
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Custom Solutions
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Scalable & Secure
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Modern Technology
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    Agile Process
+                </li>
+
+            </ul>
+
+            <a href="#" class="btn-primary inline-cta">
+
+                GET STARTED
+
+                <div class="arrow-circle">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+            </a>
+
+            <span class="footer-note">
+                Have an idea? Let's bring it to life.
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<section class="process-section">
+    
+    <div class="section-title-container">
+        <div class="title-accent-line"></div>
+        <h2>Our Simple 5 Step Process</h2>
+    </div>
+
+    <div class="timeline-container">
+
+        <!-- STEP 1 -->
+        <div class="timeline-step step-1">
+            <div class="node-circle">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+
+            <div class="step-content">
+                <h3><span class="step-num">01</span> Discover</h3>
+                <p>Understanding<br>your goals</p>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="timeline-step step-2">
+            <div class="node-circle">
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+            <div class="step-content">
+                <h3><span class="step-num">02</span> Plan</h3>
+                <p>Research &<br>strategy</p>
+            </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="timeline-step step-3">
+            <div class="node-circle">
+                <i class="fa-solid fa-atom"></i>
+            </div>
+
+            <div class="step-content">
+                <h3><span class="step-num">03</span> Design</h3>
+                <p>UI/UX<br>design</p>
+            </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="timeline-step step-4">
+            <div class="node-circle">
+                <i class="fa-solid fa-braille"></i>
+            </div>
+
+            <div class="step-content">
+                <h3><span class="step-num">04</span> Develop</h3>
+                <p>Building<br>with clean code</p>
+            </div>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="timeline-step step-5">
+            <div class="node-circle">
+                <i class="fa-solid fa-fan"></i>
+            </div>
+
+            <div class="step-content">
+                <h3><span class="step-num">05</span> Launch</h3>
+                <p>Testing &<br>deployment</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="portfolio-showcase-section" id="work">
+    
+    <div class="card card-why-choose-us">
+        <div class="showcase-image-box">
+            <img src="images/left-image.jpg" alt="Experienced Team working" class="showcase-img">
+            <div class="blue-glow-overlay"></div>
+        </div>
+
+        <div class="showcase-text-box">
+            <h2>Why Clients Choose Us</h2>
+            <ul class="blue-check-list">
+                <li><i class="fa-solid fa-circle-check"></i> Experienced & dedicated team</li>
+                <li><i class="fa-solid fa-circle-check"></i> On-time delivery, every time</li>
+                <li><i class="fa-solid fa-circle-check"></i> Transparent communication</li>
+                <li><i class="fa-solid fa-circle-check"></i> Quality that scales</li>
+                <li><i class="fa-solid fa-circle-check"></i> Long-term partnership</li>
+            </ul>
+            <a href="#" class="btn-learn-more">Learn More</a>
+        </div>
+    </div>
+
+    <div class="projects-grid-wrapper">
+        
+        <div class="card card-projects-intro">
+            <h2>Real Projects. Real Results. Drive Real Growth.</h2>
+            <p class="subtitle-text">Solutions built to solve, scale, and succeed.</p>
+            
+            <ul class="blue-check-list static-list">
+                <li><i class="fa-solid fa-circle-check"></i> High Performance</li>
+                <li><i class="fa-solid fa-circle-check"></i> Scalable Architecture</li>
+                <li><i class="fa-solid fa-circle-check"></i> User-Centric Design</li>
+                <li><i class="fa-solid fa-circle-check"></i> Measurable Results</li>
+            </ul>
+
+            <a href="#" class="btn-primary inline-cta-blue">
+                VIEW OUR WORK 
+                <div class="arrow-circle">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="projects-visuals-grid">
+            
+            <div class="project-item-card">
+                <img src="images/fintech-image.jpg" alt="Fintech App Mockup" class="project-bg-img">
+                <div class="project-label">Fintech App</div>
+            </div>
+
+            <div class="project-item-card">
+                <img src="images/ecommerce-image.jpg" alt="E-commerce Platform Mockup" class="project-bg-img">
+                <div class="project-label">E-commerce Platform</div>
+            </div>
+
+            <div class="project-item-card">
+                <img src="images/healthcare-image.jpg" alt="Healthcare Solution Mockup" class="project-bg-img">
+                <div class="project-label">Healthcare Solution</div>
+            </div>
+
+            <div class="project-item-card">
+                <img src="images/logistics-image.jpg" alt="Logistics Dashboard Mockup" class="project-bg-img">
+                <div class="project-label">Logistics Dashboard</div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="final-blocks-section">
+
+    <div class="card card-testimonials">
+        <div class="testimonials-header">
+            <h2>What Our Clients Say</h2>
+            <a href="#" class="btn-outline-blue">VIEW ALL TESTIMONIALS</a>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-box">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote">"Spade delivered beyond our expectations."</p>
+                <div class="client-info">
+                    <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop');"></div>
+                    <div>
+                        <h4>Rahul Mehta</h4>
+                        <span class="client-role">CEO, Fintech Startup</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote">"Professional, responsive, and highly skilled team."</p>
+                <div class="client-info">
+                    <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop');"></div>
+                    <div>
+                        <h4>Anita Sharma</h4>
+                        <span class="client-role">Founder, E-commerce Brand</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-box">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote">"Our go-to tech partner for every project."</p>
+                <div class="client-info">
+                    <div class="avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop');"></div>
+                    <div>
+                        <h4>Vikram Singh</h4>
+                        <span class="client-role">CTO, Logistics Company</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+    <div class="card-blog-wrapper" id="blog">
+        <div class="blog-intro-panel">
+            <h2>Insights & Perspectives</h2>
+            <div class="short-accent-line"></div>
+            <p>Stay updated with the latest trends, tips, and insights from the world of technology and business.</p>
+            <a href="#" class="btn-learn-more font-tight">EXPLORE BLOG</a>
+        </div>
+
+        <div class="blog-cards-grid">
+            <div class="blog-item" style="background-image: linear-gradient(to top, rgba(3,7,18,1) 30%, rgba(3,7,18,0.2) 100%), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=400&auto=format&fit=crop');">
+                <div class="blog-inner-content">
+                    <div class="blog-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>How to Build Scalable Web Applications</h3>
+                    <a href="#" class="read-more-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-item" style="background-image: linear-gradient(to top, rgba(3,7,18,1) 30%, rgba(3,7,18,0.2) 100%), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400&auto=format&fit=crop');">
+                <div class="blog-inner-content">
+                    <h3>Top 10 Web Development Trends in 2024</h3>
+                    <a href="#" class="read-more-link">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-mini-stack">
+                <div class="blue-quote-box">
+                    <p>"Great insights that help us grow digitally."</p>
+                    <span class="quote-author">- Our Readers</span>
+                </div>
+                
+                <div class="mini-row">
+                    <div class="mini-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <div class="mini-text">
+                        <h4>Mobile App Development Best Practices</h4>
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="mini-row">
+                    <div class="mini-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="mini-text">
+                        <h4>UI/UX Design Trends to Watch</h4>
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card card-footer-cta" id="contact">
+        <div class="footer-cta-left">
+            <div class="title-with-bar">
+                <h2>Let's Build Something Amazing</h2>
+                <div class="title-bar-blue"></div>
+            </div>
+            <p>Have a project in mind? Let's turn your idea into a powerful digital solution.</p>
+            
+            <ul class="footer-check-list">
+                <li><i class="fa-solid fa-check"></i> Free Consultation</li>
+                <li><i class="fa-solid fa-check"></i> Tailored Solutions</li>
+                <li><i class="fa-solid fa-check"></i> On-time Delivery</li>
+            </ul>
+        </div>
+        
+        <div class="footer-cta-right">
+            <div class="glowing-neon-ring"></div>
+            
+            <div class="panoramic-photo-frame">
+                <img src="images/right-handshake-image.png" alt="Partnership meeting" class="footer-handshake-img">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+        <div class="footer-brand">
+
+            <div class="logo footer-logo">
+            <img src="images/logo.png" alt="SPADE Logo" class="logo-img" loading="lazy"> SPADE
+        </div>
+
+            <p>
+                Crafting modern digital experiences with clean design,
+                scalable development, and innovative solutions.
+            </p>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+
+        <!-- CENTER -->
+        <div class="footer-links">
+
+            <h4>Quick Links</h4>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="footer-contact">
+
+            <h4>Contact</h4>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@spade.com
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    +92 300 1234567
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Islamabad, Pakistan
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        © 2026 SPADE. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
